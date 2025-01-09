@@ -7,8 +7,7 @@ public class TodoList {
     ArrayList<Task> tasks = new ArrayList<>();
 
     public boolean addTask(Task task) {
-        tasks.add(task);
-        return true;
+        return tasks.add(task);
     }
 
     public void printTasks() {
@@ -64,6 +63,7 @@ public class TodoList {
         for(Task task : sortedTasks) {
             System.out.println(task.taskName + " : " + task.isCompeted);
         }
+        System.out.println();
     }
 
     public void printTasksDescending() {
@@ -73,5 +73,6 @@ public class TodoList {
         for(Task task : sortedTasks) {
             System.out.println(task.taskName + " : " + task.isCompeted);
         }
+        System.out.println();
     }
 }
