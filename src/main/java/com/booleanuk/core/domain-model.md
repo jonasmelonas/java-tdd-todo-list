@@ -14,11 +14,11 @@
 |          |                       | void printTasks()                    | prints the list of tasks to the terminal       |                                 |
 |          |                       | boolean changeStatus(Task task)      | The task exists in tasks and is updated        | true                            |
 |          |                       |                                      | The task does not exist and can't be updated   | false                           |
-|          |                       | ArrayList<Task> getCompleteTasks()   | Filters complete tasks in a new list           | ArrayList<Task> completeTasks   |
+|          |                       | ArrayList<Task> getCompletedTasks()  | Filters complete tasks in a new list           | ArrayList<Task> completeTasks   |
 |          |                       | ArrayList<Task> getIncompleteTasks() | Filters incomplete tasks in a new list         | ArrayList<Task> incompleteTasks |
-|          |                       | Task getTask(Task task)              | Task exists and the user is informed           | task                            |
+|          |                       | Task getTask(String taskName)        | Task exists and the user is informed           | task                            |
 |          |                       |                                      | Task doesn't exist, and the user is informed   | null                            |
-|          |                       | boolean removeTask(Task task)        | Task exists, and is successfully deleted       | true                            |
+|          |                       | boolean removeTask(String taskName)  | Task exists, and is successfully deleted       | true                            |
 |          |                       |                                      | Task doesn't exists, and thus can't be deleted | false                           |
 |          |                       | void printTasksAscending()           | prints tasks in ascending order                |                                 |
 |          |                       | void printTasksDescending()          | prints tasks in descending order               |                                 |
